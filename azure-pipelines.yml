@@ -29,10 +29,10 @@ stages:
               sshKeySecureFile: "id_rsa"
 
           #Terraform Install
-          - task: TerraformInstaller@0
+          - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
             displayName: Installtion
             inputs:
-              terraformVersion: "latest"
+              terraformVersion: "1.0.1"
               #terraformVersion: "1.2.9"
 
           #Terraform Init
