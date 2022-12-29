@@ -7,10 +7,10 @@ tenant_id = "aff1b5b8-16de-4d2f-a777-8698ca72a536"
 # Resource Group/Location
 location = "East US"
 resource_group = "tfstate" # The same resource_group use to create the backend state and container
-application_type = "myApplication"
+application_type = "myUdacityApplicationProj3"
 
 # Network
-virtual_network_name = "myApplication_vnet"
+virtual_network_name = "myUdacityApplicationProj3_vnet"
 address_space = ["10.5.0.0/16"]
 address_prefix_test = "10.5.1.0/24"
 
