@@ -21,8 +21,6 @@ This is project3 for Udacity Cloud DevOps using Microsoft Azure Nanodegree Progr
 
 
 
-
-
 ![Ensuring Quality Releases](https://dl3.pushbulletusercontent.com/IrYaBd3WXf6jUW4IbRhaRjI0lOTIy8y2/image.png)
 
 ## VM
