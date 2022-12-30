@@ -1,6 +1,6 @@
 ﻿# Ensuring Quality Releases
 
-This is project3 for the Udacity Cloud DevOps using Microsoft Azure Nanodegree Program. How to automate CI/CD pipelines using Azure DevOps.
+This is project3 for Udacity Cloud DevOps using Microsoft Azure Nanodegree Program. How to automate CI/CD pipelines using Azure DevOps.
 
 ### Tools
 1. Visual Studio Code
