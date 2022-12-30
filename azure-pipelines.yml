@@ -255,14 +255,14 @@ stages:
             displayName: Install Newman CLI
           - bash: |
               newman run automatedtesting/postman/regressionTest.json \
-                         -e automatedtesting/postman/testingenvironment.json \
+                         -e automatedtesting/postman/regressionTestUdacity.json \
                          --reporters cli,junit \
                          --reporter-junit-export log/newman/regressionTestUdacity.xml \
                          --suppress-exit-code
             displayName: Run Regression Test
           - bash: |
               newman run automatedtesting/postman/validationTest.json \
-                         -e automatedtesting/postman/testingenvironment.json \
+                         -e automatedtesting/postman/validationTestUdacity.json \
                          --reporters cli,junit \
                          --reporter-junit-export log/newman/validationTestUdacity.xml \
                          --suppress-exit-code
