@@ -1,34 +1,39 @@
 {
 	"info": {
-		"_postman_id": "ef2b4cd6-0c4c-48eb-b721-f7d39a105686",
-		"name": "Validation Test Udacity",
+		"_postman_id": "b699b9ab-0298-4aa4-a3a4-ff99834300cd",
+		"name": "validation",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Create Employee",
+			"name": "Create Employee validation",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
+							"\r",
+							"var code=pm.response.code;\r",
+							"if(\"429\" != code){\r",
 							"pm.test(\"Successful response\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"success\");\r",
 							"});\r",
-							"\r",
-							"var json = pm.response.json();\r",
-							"pm.environment.set(\"id\", json.data.id);\r",
 							"\r",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"  pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
+							"\r",
 							"pm.test(\"Validate Data\", function () {\r",
+							"   \r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.data.name).to.eql(pm.variables.get(\"name\"));\r",
-							"    pm.expect(jsonData.data.age).to.eql(pm.variables.get(\"age\"));\r",
-							"    pm.expect(jsonData.data.salary).to.eql(pm.variables.get(\"salary\"));\r",
-							"});"
+							"    pm.expect(jsonData.data.name).to.equals(\"Dummy Name\");\r",
+							"    pm.expect(jsonData.data.age).to.equal(\"19\");\r",
+							"    pm.expect(jsonData.data.salary).to.equal(\"1000\");\r",
+							"});\r",
+							"}\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -39,7 +44,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"salary\": \"{{salary}}\",\r\n    \"age\": \"{{age}}\"\r\n}",
+					"raw": "{\r\n\"name\": \"Dummy Name\",\r\n\"salary\": \"1000\",\r\n\"age\": \"19\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -47,13 +52,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/{{version}}/create",
+					"raw": "https://dummy.restapiexample.com/api/v1/create",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"dummy",
+						"restapiexample",
+						"com"
 					],
 					"path": [
 						"api",
-						"{{version}}",
+						"v1",
 						"create"
 					]
 				}
@@ -67,9 +75,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Successful response\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"success\");\r",
-							"});\r",
+							"var code=pm.response.code;\r",
+							"if(\"429\" != code){\r",
 							"\r",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"  pm.response.to.have.status(200);\r",
@@ -86,7 +93,8 @@
 							"pm.test('Validate schema', function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-							"});"
+							"})\r",
+							"};"
 						],
 						"type": "text/javascript"
 					}
@@ -96,13 +104,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/api/{{version}}/employees",
+					"raw": "https://dummy.restapiexample.com/api/v1/employees",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"dummy",
+						"restapiexample",
+						"com"
 					],
 					"path": [
 						"api",
-						"{{version}}",
+						"v1",
 						"employees"
 					]
 				}
@@ -116,33 +127,32 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Successful response\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"success\");\r",
-							"});\r",
+							"var code=pm.response.code;\r",
+							"if(\"429\" != code){\r",
+							"    pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    });\r",
 							"\r",
-							"pm.test(\"Status code is 200\", function () {\r",
-							"  pm.response.to.have.status(200);\r",
-							"});\r",
+							"    var schema = {\r",
+							"        \"type\": \"object\",\r",
+							"        \"properties\": {\r",
+							"            \"status\"  : { \"type\": \"string\" },\r",
+							"            \"data\"    : { \"type\": \"object\",\r",
+							"                        \"properties\": {\r",
+							"                            \"name\": { \"type\": \"string\" },\r",
+							"                            \"salary\": { \"type\": \"string\" },\r",
+							"                            \"age\": { \"type\": \"string\" }\r",
+							"                        }\r",
+							"                        },\r",
+							"            \"message\" : { \"type\": \"string\" }\r",
+							"        }\r",
+							"    };\r",
 							"\r",
-							"var schema = {\r",
-							"    \"type\": \"object\",\r",
-							"    \"properties\": {\r",
-							"        \"status\"  : { \"type\": \"string\" },\r",
-							"        \"data\"    : { \"type\": \"object\",\r",
-							"                      \"properties\": {\r",
-							"                          \"name\": { \"type\": \"string\" },\r",
-							"                          \"salary\": { \"type\": \"string\" },\r",
-							"                          \"age\": { \"type\": \"string\" }\r",
-							"                      }\r",
-							"                    },\r",
-							"\t\t\"message\" : { \"type\": \"string\" }\r",
-							"    }\r",
+							"    pm.test('Validate schema', function () {\r",
+							"        var jsonData = pm.response.json();\r",
+							"        pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+							"    })\r",
 							"};\r",
-							"\r",
-							"pm.test('Validate schema', function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-							"});\r",
 							""
 						],
 						"type": "text/javascript"
@@ -154,7 +164,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"{{new_name}}\",\r\n    \"salary\": \"{{new_salary}}\",\r\n    \"age\": \"{{new_age}}\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Changed name\",\r\n    \"salary\": \"2000\",\r\n    \"age\": \"32\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -162,15 +172,18 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/{{version}}/update/{{id}}",
+					"raw": "https://dummy.restapiexample.com/api/v1/update/1",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"dummy",
+						"restapiexample",
+						"com"
 					],
 					"path": [
 						"api",
-						"{{version}}",
+						"v1",
 						"update",
-						"{{id}}"
+						"1"
 					]
 				}
 			},
@@ -183,6 +196,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"var code=pm.response.code;\r",
+							"if(\"429\" != code){\r",
 							"pm.test(\"Successful response\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"success\");\r",
 							"});\r",
@@ -190,6 +205,8 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"  pm.response.to.have.status(200);\r",
 							"});\r",
+							"\r",
+							"\r",
 							"\r",
 							"var schema = {\r",
 							"    \"type\": \"object\",\r",
@@ -208,7 +225,8 @@
 							"pm.test(\"Validate Message\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.eql(\"Successfully! Record has been deleted\");\r",
-							"});"
+							"})\r",
+							"};"
 						],
 						"type": "text/javascript"
 					}
@@ -218,15 +236,18 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/api/{{version}}/delete/{{id}}",
+					"raw": "https://dummy.restapiexample.com/api/v1/delete/1",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"dummy",
+						"restapiexample",
+						"com"
 					],
 					"path": [
 						"api",
-						"{{version}}",
+						"v1",
 						"delete",
-						"{{id}}"
+						"1"
 					]
 				}
 			},
