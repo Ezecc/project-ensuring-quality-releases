@@ -1,6 +1,91 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1625752680082,17226,Get Books,200,OK,Stress Test 1-5,text,true,,97539,154,5,5,https://udacitytest-appservice.azurewebsites.net/api/Books,17142,0,1221
-1625752680078,17383,Get Books,200,OK,Stress Test 1-3,text,true,,532240,154,4,4,https://udacitytest-appservice.azurewebsites.net/api/Books,17140,0,1225
-1625752680082,17403,Get Books,200,OK,Stress Test 1-2,text,true,,528540,154,3,3,https://udacitytest-appservice.azurewebsites.net/api/Books,17145,0,1224
-1625752680085,17430,Get Books,200,OK,Stress Test 1-1,text,true,,537200,154,2,2,https://udacitytest-appservice.azurewebsites.net/api/Books,17133,0,1220
-1625752680086,17445,Get Books,200,OK,Stress Test 1-4,text,true,,572030,154,1,1,https://udacitytest-appservice.azurewebsites.net/api/Books,17135,0,1223
+1672413670785,451,Get Users,200,OK,stress 1-1,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,451,0,340
+1672413671236,98,Delete User,200,OK,stress 1-1,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/1,97,0,0
+1672413671334,98,Get User by ID,200,OK,stress 1-1,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/1,98,0,0
+1672413672783,394,Get Users,200,OK,stress 1-2,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,394,0,287
+1672413673177,102,Delete User,200,OK,stress 1-2,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/3,102,0,0
+1672413673280,102,Get User by ID,200,OK,stress 1-2,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/3,102,0,0
+1672413674782,408,Get Users,200,OK,stress 1-3,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,408,0,296
+1672413675190,100,Delete User,200,OK,stress 1-3,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/5,100,0,0
+1672413675290,96,Get User by ID,200,OK,stress 1-3,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/5,96,0,0
+1672413676784,392,Get Users,200,OK,stress 1-4,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,392,0,286
+1672413677176,98,Delete User,200,OK,stress 1-4,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/7,98,0,0
+1672413677274,97,Get User by ID,200,OK,stress 1-4,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/7,97,0,0
+1672413678784,385,Get Users,200,OK,stress 1-5,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,385,0,287
+1672413679169,102,Delete User,200,OK,stress 1-5,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/9,102,0,0
+1672413679272,102,Get User by ID,200,OK,stress 1-5,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/9,102,0,0
+1672413680784,402,Get Users,200,OK,stress 1-6,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,402,0,286
+1672413681186,99,Delete User,400,Bad Request,stress 1-6,text,false,,757,173,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/bookid,99,0,0
+1672413681285,98,Get User by ID,400,Bad Request,stress 1-6,text,false,,757,173,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/bookid,98,0,0
+1672413682783,395,Get Users,200,OK,stress 1-7,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,395,0,287
+1672413683179,99,Delete User,200,OK,stress 1-7,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/2,99,0,0
+1672413683279,99,Get User by ID,200,OK,stress 1-7,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/2,99,0,0
+1672413684783,404,Get Users,200,OK,stress 1-8,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,404,0,286
+1672413685187,96,Delete User,200,OK,stress 1-8,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/4,96,0,0
+1672413685283,95,Get User by ID,200,OK,stress 1-8,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/4,95,0,0
+1672413686783,394,Get Users,200,OK,stress 1-9,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,394,0,287
+1672413687177,100,Delete User,200,OK,stress 1-9,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/6,100,0,0
+1672413687277,102,Get User by ID,200,OK,stress 1-9,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/6,102,0,0
+1672413688782,391,Get Users,200,OK,stress 1-10,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,391,0,286
+1672413689174,96,Delete User,200,OK,stress 1-10,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/8,96,0,0
+1672413689270,97,Get User by ID,200,OK,stress 1-10,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/8,97,0,0
+1672413690781,388,Get Users,200,OK,stress 1-11,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,388,0,290
+1672413691169,97,Delete User,200,OK,stress 1-11,text,true,,429,169,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/10,97,0,0
+1672413691266,97,Get User by ID,200,OK,stress 1-11,text,true,,429,169,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/10,97,0,0
+1672413692783,394,Get Users,200,OK,stress 1-12,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,394,0,289
+1672413693178,96,Delete User,200,OK,stress 1-12,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/1,96,0,0
+1672413693275,96,Get User by ID,200,OK,stress 1-12,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/1,96,0,0
+1672413694783,386,Get Users,200,OK,stress 1-13,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,386,0,286
+1672413695169,97,Delete User,200,OK,stress 1-13,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/3,96,0,0
+1672413695266,97,Get User by ID,200,OK,stress 1-13,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/3,97,0,0
+1672413696781,383,Get Users,200,OK,stress 1-14,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,383,0,285
+1672413697164,99,Delete User,200,OK,stress 1-14,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/5,99,0,0
+1672413697263,97,Get User by ID,200,OK,stress 1-14,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/5,97,0,0
+1672413698781,385,Get Users,200,OK,stress 1-15,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,385,0,286
+1672413699166,98,Delete User,200,OK,stress 1-15,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/7,98,0,0
+1672413699264,96,Get User by ID,200,OK,stress 1-15,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/7,96,0,0
+1672413700782,379,Get Users,200,OK,stress 1-16,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,379,0,283
+1672413701162,95,Delete User,200,OK,stress 1-16,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/9,95,0,0
+1672413701257,95,Get User by ID,200,OK,stress 1-16,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/9,95,0,0
+1672413702783,429,Get Users,200,OK,stress 1-17,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,429,0,312
+1672413703212,97,Delete User,400,Bad Request,stress 1-17,text,false,,757,173,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/bookid,97,0,0
+1672413703309,97,Get User by ID,400,Bad Request,stress 1-17,text,false,,757,173,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/bookid,97,0,0
+1672413704782,383,Get Users,200,OK,stress 1-18,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,383,0,287
+1672413705165,97,Delete User,200,OK,stress 1-18,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/2,97,0,0
+1672413705263,96,Get User by ID,200,OK,stress 1-18,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/2,96,0,0
+1672413706782,400,Get Users,200,OK,stress 1-19,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,400,0,287
+1672413707182,98,Delete User,200,OK,stress 1-19,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/4,98,0,0
+1672413707280,101,Get User by ID,200,OK,stress 1-19,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/4,101,0,0
+1672413708782,380,Get Users,200,OK,stress 1-20,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,380,0,284
+1672413709162,96,Delete User,200,OK,stress 1-20,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/6,96,0,0
+1672413709258,98,Get User by ID,200,OK,stress 1-20,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/6,98,0,0
+1672413710782,380,Get Users,200,OK,stress 1-21,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,380,0,285
+1672413711163,95,Delete User,200,OK,stress 1-21,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/8,95,0,0
+1672413711259,96,Get User by ID,200,OK,stress 1-21,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/8,96,0,0
+1672413712782,396,Get Users,200,OK,stress 1-22,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,396,0,287
+1672413713179,97,Delete User,200,OK,stress 1-22,text,true,,429,169,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/10,97,0,0
+1672413713276,98,Get User by ID,200,OK,stress 1-22,text,true,,429,169,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/10,98,0,0
+1672413714782,382,Get Users,200,OK,stress 1-23,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,382,0,286
+1672413715164,97,Delete User,200,OK,stress 1-23,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/1,97,0,0
+1672413715261,101,Get User by ID,200,OK,stress 1-23,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/1,101,0,0
+1672413716781,394,Get Users,200,OK,stress 1-24,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,394,0,286
+1672413717175,96,Delete User,200,OK,stress 1-24,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/3,96,0,0
+1672413717272,97,Get User by ID,200,OK,stress 1-24,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/3,96,0,0
+1672413718782,391,Get Users,200,OK,stress 1-25,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,391,0,289
+1672413719174,100,Delete User,200,OK,stress 1-25,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/5,100,0,0
+1672413719274,96,Get User by ID,200,OK,stress 1-25,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/5,96,0,0
+1672413720782,383,Get Users,200,OK,stress 1-26,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,383,0,285
+1672413721165,97,Delete User,200,OK,stress 1-26,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/7,97,0,0
+1672413721262,97,Get User by ID,200,OK,stress 1-26,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/7,96,0,0
+1672413722782,391,Get Users,200,OK,stress 1-27,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,391,0,293
+1672413723173,97,Delete User,200,OK,stress 1-27,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/9,97,0,0
+1672413723270,96,Get User by ID,200,OK,stress 1-27,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/9,96,0,0
+1672413724782,390,Get Users,200,OK,stress 1-28,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,390,0,285
+1672413725173,98,Delete User,400,Bad Request,stress 1-28,text,false,,757,173,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/bookid,98,0,0
+1672413725271,97,Get User by ID,400,Bad Request,stress 1-28,text,false,,757,173,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/bookid,97,0,0
+1672413726782,379,Get Users,200,OK,stress 1-29,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,379,0,284
+1672413727161,96,Delete User,200,OK,stress 1-29,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/2,96,0,0
+1672413727258,96,Get User by ID,200,OK,stress 1-29,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/2,96,0,0
+1672413728781,384,Get Users,200,OK,stress 1-30,text,true,,900,166,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users,384,0,287
+1672413729165,98,Delete User,200,OK,stress 1-30,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/4,97,0,0
+1672413729263,97,Get User by ID,200,OK,stress 1-30,text,true,,426,168,1,1,https://myUdacityApplicationProj3-appservice.azurewebsites.net/api/Users/4,97,0,0
